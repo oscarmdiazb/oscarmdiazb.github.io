@@ -11,31 +11,19 @@
 <meta property="og:description" content="Ph.D. candidate in economics at the Paris School of Economics.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://oscarmdiazb.github.io/">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='Georgia,serif'>O</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.92em' font-size='92' font-family='Helvetica,Arial,sans-serif' font-weight='700' fill='%23267cb9'>O</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#fdfdfb;
-    --fg:#1c1c1a;
-    --muted:#63635d;
-    --rule:#e2e1da;
-    --link:#7a2e1d;
-    --accent:#8f3a25;
-    --card:#f6f5f0;
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --bg:#14140f;
-      --fg:#eceadf;
-      --muted:#a3a094;
-      --rule:#2e2e26;
-      --link:#e0a58c;
-      --accent:#e0a58c;
-      --card:#1d1d16;
-    }
-  }
-  :root[data-theme="dark"]{
-    --bg:#14140f; --fg:#eceadf; --muted:#a3a094; --rule:#2e2e26;
-    --link:#e0a58c; --accent:#e0a58c; --card:#1d1d16;
+    --bg:#ffffff;
+    --fg:#4f4f4f;
+    --heading:#1f1f1f;
+    --muted:#767676;
+    --link:#267cb9;
+    --link-hover:#1a5c8c;
+    --rule:#e6e6e6;
   }
 
   *{box-sizing:border-box}
@@ -44,118 +32,98 @@
     margin:0;
     background:var(--bg);
     color:var(--fg);
-    font-family:Palatino,"Palatino Linotype","Book Antiqua",Georgia,serif;
-    font-size:18px;
+    font-family:"Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
     line-height:1.62;
     -webkit-font-smoothing:antialiased;
   }
-  .wrap{max-width:760px;margin:0 auto;padding:64px 16px 96px}
+  .wrap{max-width:790px;margin:0;padding:56px 24px 96px 48px}
 
-  a{color:var(--link);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--link) 35%,transparent)}
-  a:hover{border-bottom-color:var(--link)}
+  a{color:var(--link);text-decoration:none}
+  a:hover{color:var(--link-hover);text-decoration:underline}
 
-  header{margin-bottom:44px}
   h1{
-    font-size:2.15rem;
-    font-weight:normal;
-    letter-spacing:.01em;
-    margin:0 0 6px;
+    font-size:1.85rem;
+    font-weight:700;
+    color:var(--heading);
+    letter-spacing:-.01em;
+    margin:0 0 8px;
   }
-  .tagline{color:var(--muted);font-size:1rem;margin:0}
+  .tagline{color:var(--muted);font-size:.95rem;margin:0}
 
   nav{
-    margin:22px 0 0;
-    padding-top:18px;
+    margin:20px 0 0;
+    padding-top:16px;
     border-top:1px solid var(--rule);
     font-size:.95rem;
   }
-  nav a{margin-right:20px;border-bottom:none;color:var(--muted)}
-  nav a:hover{color:var(--accent)}
+  nav a{margin-right:22px;white-space:nowrap}
 
-  h2{
-    font-size:1.05rem;
-    font-weight:normal;
-    text-transform:uppercase;
-    letter-spacing:.12em;
-    color:var(--muted);
-    margin:52px 0 20px;
-    padding-bottom:8px;
-    border-bottom:1px solid var(--rule);
+  section{
+    margin-top:36px;
+    padding-top:26px;
+    border-top:1px solid var(--rule);
   }
-  section:first-of-type h2{margin-top:0}
+  section.bare{border-top:none;padding-top:0;margin-top:28px}
+  h2{
+    font-size:1.3rem;
+    font-weight:700;
+    color:var(--heading);
+    margin:0 0 18px;
+  }
 
-  p{margin:0 0 1em}
-  .intro p:last-child{margin-bottom:0}
+  p{margin:0 0 .95em}
+  section p:last-child{margin-bottom:0}
 
-  .paper{margin:0 0 34px}
+  .paper{margin:0 0 26px}
   .paper:last-child{margin-bottom:0}
   .paper h3{
-    font-size:1.08rem;
-    font-weight:normal;
-    line-height:1.4;
-    margin:0 0 6px;
+    font-size:1rem;
+    font-weight:700;
+    color:var(--link);
+    line-height:1.45;
+    margin:0 0 3px;
   }
-  .paper h3 a{border-bottom-color:transparent}
-  .paper h3 a:hover{border-bottom-color:var(--link)}
-  .coauthors{color:var(--muted);font-size:.95rem;margin:0 0 6px}
-  .venue{font-size:.95rem;margin:0 0 10px}
-  .venue em{color:var(--fg)}
-  .status{
-    display:inline-block;
-    font-size:.78rem;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-    letter-spacing:.04em;
-    text-transform:uppercase;
-    color:var(--muted);
-    background:var(--card);
-    border:1px solid var(--rule);
-    border-radius:3px;
-    padding:2px 8px;
-    vertical-align:2px;
-    margin-left:6px;
-    white-space:nowrap;
-  }
-  .links{font-size:.92rem;margin:0}
-  .links a{margin-right:14px}
+  .paper h3 a{color:inherit}
+  .coauthors{margin:0 0 1px;font-size:.95rem}
+  .venue{margin:0 0 4px;font-size:.95rem;font-style:italic}
+  .status{font-style:italic;color:var(--muted)}
 
-  details{margin-top:10px}
+  .links{margin:0;font-size:.95rem}
+  .links a{display:block}
+
+  details{margin:0}
   summary{
     cursor:pointer;
-    font-size:.92rem;
-    color:var(--muted);
+    font-size:.95rem;
+    color:var(--link);
     list-style:none;
     display:inline-block;
     user-select:none;
   }
   summary::-webkit-details-marker{display:none}
-  summary::before{content:"▸ ";font-size:.85em}
-  details[open] summary::before{content:"▾ "}
-  summary:hover{color:var(--accent)}
+  summary:hover{color:var(--link-hover);text-decoration:underline}
+  details[open] summary{margin-bottom:8px}
   details p{
-    margin:12px 0 0;
-    font-size:.95rem;
+    margin:0 0 10px;
+    font-size:.93rem;
     line-height:1.6;
-    color:var(--fg);
-    background:var(--card);
-    border-left:2px solid var(--rule);
-    padding:14px 18px;
-    border-radius:0 3px 3px 0;
+    max-width:70ch;
   }
 
   footer{
-    margin-top:64px;
+    margin-top:40px;
     padding-top:20px;
     border-top:1px solid var(--rule);
-    font-size:.88rem;
+    font-size:.9rem;
     color:var(--muted);
   }
-  footer a{color:var(--muted)}
 
-  @media (max-width:600px){
-    body{font-size:17px}
-    .wrap{padding:40px 16px 64px}
-    h1{font-size:1.8rem}
-    nav a{margin-right:16px}
+  @media (max-width:640px){
+    body{font-size:15px}
+    .wrap{padding:36px 18px 64px}
+    h1{font-size:1.6rem}
+    nav a{margin-right:18px;display:inline-block;margin-bottom:4px}
   }
 </style>
 </head>
@@ -166,53 +134,66 @@
     <h1>Oscar M. Díaz B.</h1>
     <p class="tagline">Ph.D. candidate in Economics, Paris School of Economics</p>
     <nav>
+      <a href="#bio">Bio</a>
       <a href="#research">Research</a>
       <a href="#background">Background</a>
-      <a href="cv.pdf">CV (PDF)</a>
-      <a href="mailto:oscarmdiazb@gmail.com">Email</a>
+      <a href="cv.pdf">CV</a>
+      <a href="mailto:oscarmdiazb@gmail.com">Contact</a>
     </nav>
   </header>
 
-  <section class="intro">
+  <section id="bio" class="bare">
     <p>I am a Ph.D. candidate at the <a href="https://www.parisschoolofeconomics.eu/en/">Paris School of Economics</a>,
-    interested in the economics of human and social capital formation in developing countries.</p>
-    <p>I am currently visiting UC Berkeley as a
+    interested in the economics of human and social capital formation in developing countries.
+    I am currently visiting UC Berkeley as a
     <a href="https://cega.berkeley.edu/person/oscar-mauricio-diaz-botia/">CEGA fellow</a>.</p>
-    <p>You can reach me at <a href="mailto:oscarmdiazb@gmail.com">oscarmdiazb@gmail.com</a>.</p>
+    <p>My advisor is Karen Macours. You can reach me at
+    <a href="mailto:oscarmdiazb@gmail.com">oscarmdiazb@gmail.com</a>.</p>
+    <p><a href="cv.pdf"><strong>Curriculum Vitae</strong></a></p>
   </section>
 
   <section id="research">
-    <h2>Research</h2>
+    <h2>Publications</h2>
 
     <article class="paper">
       <h3><a href="https://doi.org/10.1016/j.ehb.2025.101483">Second generation effects of an experimental conditional cash transfer program on early childhood human capital in Nicaragua</a></h3>
-      <p class="coauthors">with Tania Barham, Karen Macours, John A. Maluccio and Julieta Vera Rueda</p>
-      <p class="venue"><em>Economics and Human Biology</em>, 2025</p>
-      <p class="links">
-        <a href="https://doi.org/10.1016/j.ehb.2025.101483">Paper</a>
+      <p class="coauthors">(with Tania Barham, Karen Macours, John A. Maluccio and Julieta Vera Rueda)</p>
+      <p class="venue">Economics and Human Biology, 2025</p>
+      <div class="links">
+        <details>
+          <summary>Abstract (click to expand)</summary>
+          <p>Interventions targeting improvements in human capital are often motivated by their potential to break the intergenerational transmission of poverty from parents to children. This study contributes to the thin evidence base on these links by examining outcomes for children of former program beneficiaries of a conditional cash transfer (CCT) program, capitalizing on randomized variation in the timing and CCT's impact on maternal human capital. We estimate intent-to-treat (ITT) differential effects on early childhood anthropometric and cognitive outcomes for 0–3-year-old children of program beneficiaries (N=366), as well as effects on key domains including nutrition, health, stimulation and the home environment. We find that moderately higher schooling for mothers (19–22 years old) who were the original program beneficiaries did not translate into improvements in anthropometrics or cognitive outcomes for their children. We also find no effects on behaviors commonly thought to be affected by higher education such as investments in nutrition and preventive health, or stimulation. Early program beneficiary mothers, however, had worse mental health outcomes and were more likely to use violent disciplinary practices such as spanking, threatening and punishing. Findings demonstrate the complexity of intergenerational mechanisms across genetic, biological, environmental and behavioral factors, and also suggest the importance of maternal mental health as a mechanism influencing child outcomes.</p>
+        </details>
+        <a href="https://doi.org/10.1016/j.ehb.2025.101483">Link to paper</a>
         <a href="https://github.com/oscarmdiazb/Replication-Package-Second-Generation-Effects-Nicaragua">Replication package</a>
-      </p>
-      <details>
-        <summary>Abstract</summary>
-        <p>Interventions targeting improvements in human capital are often motivated by their potential to break the intergenerational transmission of poverty from parents to children. This study contributes to the thin evidence base on these links by examining outcomes for children of former program beneficiaries of a conditional cash transfer (CCT) program, capitalizing on randomized variation in the timing and CCT's impact on maternal human capital. We estimate intent-to-treat (ITT) differential effects on early childhood anthropometric and cognitive outcomes for 0–3-year-old children of program beneficiaries (N=366), as well as effects on key domains including nutrition, health, stimulation and the home environment. We find that moderately higher schooling for mothers (19–22 years old) who were the original program beneficiaries did not translate into improvements in anthropometrics or cognitive outcomes for their children. We also find no effects on behaviors commonly thought to be affected by higher education such as investments in nutrition and preventive health, or stimulation. Early program beneficiary mothers, however, had worse mental health outcomes and were more likely to use violent disciplinary practices such as spanking, threatening and punishing. Findings demonstrate the complexity of intergenerational mechanisms across genetic, biological, environmental and behavioral factors, and also suggest the importance of maternal mental health as a mechanism influencing child outcomes.</p>
-      </details>
+      </div>
+    </article>
+  </section>
+
+  <section id="ongoing">
+    <h2>Work in Progress</h2>
+
+    <article class="paper">
+      <h3>The Impact of Restorative and Socioemotional Practices on Well-Being and Learning: Experimental Evidence from Schools in Bogotá</h3>
+      <p class="venue status">Implementation ongoing</p>
+      <div class="links">
+        <details>
+          <summary>Abstract (click to expand)</summary>
+          <p>In partnership with the Secretary of Education of Bogotá, this RCT evaluates the impact of restorative and socioemotional practices workshops in public secondary classrooms experiencing high levels of violence (N=200 classrooms / 6,000 students). Government trained facilitators implement a 4-session process in secondary classrooms "in conflict" (i.e. with active severe conflictive situations, bullying, fights, or any violence between peers) aimed to improve the relationship between students and strengthen key socioemotional skills such as empathy and self-awareness for better conflict management. Impacts on violence, well-being, and learning are measured using administrative records, student and teacher surveys, and incentivized behavioral games. The project places particular emphasis on ex-ante, role-specific heterogeneous impacts (victim, bystander, perpetrator).</p>
+        </details>
+      </div>
     </article>
 
     <article class="paper">
-      <h3>The Impact of Restorative and Socioemotional Practices on Well-Being and Learning: Experimental Evidence from Schools in Bogotá<span class="status">Implementation ongoing</span></h3>
-      <details>
-        <summary>Abstract</summary>
-        <p>In partnership with the Secretary of Education of Bogotá, this RCT evaluates the impact of restorative and socioemotional practices workshops in public secondary classrooms experiencing high levels of violence (N=200 classrooms / 6,000 students). Government trained facilitators implement a 4-session process in secondary classrooms "in conflict" (i.e. with active severe conflictive situations, bullying, fights, or any violence between peers) aimed to improve the relationship between students and strengthen key socioemotional skills such as empathy and self-awareness for better conflict management. Impacts on violence, well-being, and learning are measured using administrative records, student and teacher surveys, and incentivized behavioral games. The project places particular emphasis on ex-ante, role-specific heterogeneous impacts (victim, bystander, perpetrator).</p>
-      </details>
-    </article>
-
-    <article class="paper">
-      <h3>Menstrual Stigma, Hygiene Infrastructure and Learning: Experimental Evidence from Madagascar<span class="status">Implementation ongoing</span></h3>
-      <p class="coauthors">with Karen Macours, Mariachiara Iannuzzi and Duncan Webb</p>
-      <details>
-        <summary>Abstract</summary>
-        <p>Menstrual stigma and inadequate sanitation infrastructure are widely cited barriers to girls' educational participation, yet there is limited causal evidence on the relative importance and complementarities of social-norm interventions and physical investments. We report on an ongoing randomized field experiment in 140 schools in Madagascar designed to test the independent and joint effects of a menstrual stigma reduction and hygiene promotion program and a school sanitation infrastructure intervention. The social-norm intervention identifies and trains student "positive deviants" to serve as peer ambassadors for norm change, equips teachers to deliver sensitization sessions on menstrual stigma and hygiene, provides menstrual products, and mobilizes school committees to improve the school environment. The infrastructure intervention consists of the construction and upgrading of sanitation facilities. A third arm combines both components. We evaluate impacts on menstrual stigma, knowledge and hygiene behaviors, school climate, and learning outcomes. By experimentally disentangling behavioral and infrastructural constraints, the study aims to provide evidence on whether and how social and physical investments interact to improve adolescent girls' educational outcomes in low-resource settings.</p>
-      </details>
+      <h3>Menstrual Stigma, Hygiene Infrastructure and Learning: Experimental Evidence from Madagascar</h3>
+      <p class="coauthors">(with Karen Macours, Mariachiara Iannuzzi and Duncan Webb)</p>
+      <p class="venue status">Implementation ongoing</p>
+      <div class="links">
+        <details>
+          <summary>Abstract (click to expand)</summary>
+          <p>Menstrual stigma and inadequate sanitation infrastructure are widely cited barriers to girls' educational participation, yet there is limited causal evidence on the relative importance and complementarities of social-norm interventions and physical investments. We report on an ongoing randomized field experiment in 140 schools in Madagascar designed to test the independent and joint effects of a menstrual stigma reduction and hygiene promotion program and a school sanitation infrastructure intervention. The social-norm intervention identifies and trains student "positive deviants" to serve as peer ambassadors for norm change, equips teachers to deliver sensitization sessions on menstrual stigma and hygiene, provides menstrual products, and mobilizes school committees to improve the school environment. The infrastructure intervention consists of the construction and upgrading of sanitation facilities. A third arm combines both components. We evaluate impacts on menstrual stigma, knowledge and hygiene behaviors, school climate, and learning outcomes. By experimentally disentangling behavioral and infrastructural constraints, the study aims to provide evidence on whether and how social and physical investments interact to improve adolescent girls' educational outcomes in low-resource settings.</p>
+        </details>
+      </div>
     </article>
   </section>
 
@@ -227,12 +208,11 @@
     <p>Analyzing data from various developing countries, I have researched poverty, inequality, education,
     gender empowerment, migration, nutrition and agriculture. Full details are in my
     <a href="cv.pdf">CV</a>.</p>
-    <p>My Ph.D. advisor is Karen Macours.</p>
   </section>
 
   <footer>
-    <a href="mailto:oscarmdiazb@gmail.com">oscarmdiazb@gmail.com</a> ·
-    <a href="cv.pdf">CV</a> ·
+    <a href="mailto:oscarmdiazb@gmail.com">oscarmdiazb@gmail.com</a> &nbsp;·&nbsp;
+    <a href="cv.pdf">CV</a> &nbsp;·&nbsp;
     <a href="https://github.com/oscarmdiazb">GitHub</a>
   </footer>
 
