@@ -1,9 +1,18 @@
-**Welcome to my website!** 
+# oscarmdiazb.github.io
 
-I'm a Ph.D. candidate at the Paris School of Economics, primarily interested in the economics of human capital formation in developing countries. 
-I strive for a better understanding of the determinants and dynamics of learning poverty and inequality; how individuals and societies accumulate knowledge and know-how; and whether we need a revindication of luck and not merit as the main driver of what we can become and do.
+Web personal de Oscar M. Díaz B. → https://oscarmdiazb.github.io
 
-Don't hesitate to contact me at 
-oscar.diaz@psemail.eu 
-@oscarmdiazb
+## Archivos
 
+- `index.html` — toda la web. Un solo archivo.
+- `cv/main.tex` — el codigo LaTeX del CV (viene de Overleaf).
+- `cv/build.sh` — compila el CV y actualiza `cv.pdf`.
+- `cv.pdf` — el PDF que la gente descarga.
+
+## Cambiar el CV
+
+1. Edita `cv/main.tex`.
+2. Corre `./cv/build.sh`.
+3. `git add -A && git commit -m "update cv" && git push`.
+
+La web se actualiza sola en ~1 minuto.

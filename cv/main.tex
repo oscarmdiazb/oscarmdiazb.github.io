@@ -1,0 +1,335 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+
+\usepackage{geometry}
+\usepackage{url}
+\usepackage{hanging}
+\usepackage{parskip}
+\usepackage{multicol}
+\usepackage{setspace}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{titlesec}
+
+% Adjust spacing for sections
+\titlespacing\section{0pt}{*0}{*0}
+\titlespacing\subsection{0pt}{*0}{*0}
+\titlespacing\subsubsection{0pt}{*0}{*0}
+
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc, osf]{mathpazo}
+
+% Set your name here
+\def\name{ Oscar M. D\'iaz B.}
+\def\email{oscarmdiazb@gmail.com}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{ Last update: \today \hfill }
+%\markright{\name}
+%\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+\fancyhf{}
+\lhead[\leftmark]{\name}
+\rhead[\email]{\rightmark}
+
+% Place name at left
+%{\center \Large \textbf{\name} \newline \normalsize oscarmdiazb@gmail.com }
+
+% Alternatively, print name centered and bold:
+
+\centerline{\huge \bf \name} \\
+\vspace{-0.35in}
+%\hrule
+
+    
+    
+    %Homepage: & \href{http://tesswise.com}{\tt http://tesswise.com} \\
+
+
+%\section*{\textbf{Profile}}
+%\begin{itemize}
+%\item Economic advisor in the Planing a Resource Mobilization Department of the Ministry of Education of Ethiopia. Master in Public Policy and Development from PStrong preferences for fields related to poverty alleviation.
+%\end{itemize} 
+
+%%%%%%%%%%%% EDUCATION%%%%%%%%%%
+
+\section*{\textbf{Education}}
+\hrule
+
+\begin{tabular}{p{4cm} p{12cm}}
+ \textit{Sept 2022 -- current} & \textbf{PhD candidate, Paris School of Economics} \newline \textit{Under the supervision of Karen Macours}\\
+ \textit{2018} & \textbf{MSSc Public Policy and Development, Paris School Of Economics} \newline GPA: {\bf 14.25/20 } - Graduated with High Honors (Magna Cum Laude). \newline  Master thesis: \href{https://1drv.ms/b/s!AiJLsCu4Hb4HgYoXkyEH8RuLytB8xA?e=Kxds5q}{\textit{"Intra-household bargaining power and children nutritional outcomes in Nigeria" (click to open)}}. \\
+\textit{2017}&\textbf{MSSc Economics, Toulouse School of Economics} \newline Rank: {\bf 8/104 }  - GPA: {\bf 16/20 }  - Graduated with Highest Honors (Summa Cum Laude) \\
+\textit{2017} &\textbf{B.S. Finance and International Trade, Rosario School of Economics} \newline GPA: {\bf 4.2/5.} tuition scholarship awarded throughout all the studies.
+\end{tabular}
+   
+
+
+
+\vspace{-0.15in}
+%%%%%%%%%%%% WORK EXPERIENCE %%%%%%%%%%
+\section*{\textbf{Work Experience} }
+\hrule
+\begin{tabular}{p{4cm} p{12cm}}
+\textit{Paris, Jan -- Jul 2023} &  \textbf{Researcher -- J-PAL} \newline \textit{Research consultant for the impact evaluation of a menstrual de-stigmatization program in Madagascar } \\
+\textit{Paris, Jan -- Jul 2023} &  \textbf{Consultant -- World Bank} \newline \textit{Research consultant for a RCT impact evaluation of safe spaces in Mali } \\
+\textit{Berlin, May --Jun 2022} &  \textbf{Consultant -- UNESCO} \newline \textit{Contributed to the School Health and Nutrition Global Status Report: synthesize, triangulate and provide statistical analyses} \\
+\textit{Berlin, Nov 2020 -- Mar 2022} & \textbf{Researcher -- International Security and Development Center (ISDC) } \newline  \textit{Conducting research on an impact evaluation of a school meal program in Kyrgyzstan }\newline \textit{Conducting research on UNHCR humanitarian interventions in refugee populations in Ethiopia.} \newline \textit{Leading data analysis and project insights on the Life with Corona Project} \href{lifewithcorona.org}{\textit{lifewithcorona.org}} \\
+\textit{Addis Abeba, Nov 2018 -- 2020} & \textbf{Economic Adviser (ODI Fellow) -- Planning and Resources Mobilization Department --  Ministry of Education of Ethiopia} \newline \textit{Lead project to advance the use of data to inform education policy formulation. Secured USD\$60k grant from the Tableau Foundation and the Center for Global Development to support the project. The successful completion of the project earned the Ministry USD\$2 million. }\newline  \textit{Advised the five and ten year Education Sector Development Plans (ESDPs), especially on target setting and budget projections. }\newline   \textit{Contributed to the development and implementation of projects financed by Development Partners (DPs). Especially on the General Education Quality Improvement Program for Equity (GEQIP-E).} \newline \textit{Helped to secure USD\$120 million grant from the Global Partnership for Education (GPE).} \\
+\textit{Berlin, March 2016 -- March 2018} & \textbf{Research Assistant -- International Security and Development Center (ISDC)} \newline \\ %\textit{Carried on the data analysis for the Impact Evaluation of the World Food Program Interventions on Children Anthropometric Indicators in Niger. (Valuable contributions lead to co-authorship)} 
+%\textit{Bogota, Jan 2016 -- Jul 2016} &  \textbf{Intern - Ministry of Finance and Public Credit of Colombia}  \\
+
+\end{tabular}
+
+%%%%%%%%%%%% TEACHING %%%%%%%%%%
+\newpage
+\vspace{-0.5cm}
+\section*{\textbf{Teaching and Conferences} }
+\hrule
+
+\leftskip 0in
+\begin{tabular}{p{4cm} p{12cm}}
+\textit{June, 2024} & \textbf{Learning Together for Children's Learning} \newline \textit{Menstrual Stigma, Hygiene, and Human Capital} \\
+\textit{May, 2024} & \textbf{Seminar -- Casual Development Friday} \newline \textit{The Effects of Restorative Justice on Human and Social Capital: Evidence from Schools in Bogota} \\
+\textit{May, 2023} & \textbf{Seminar -- Casual Development Friday} \newline \textit{The impact of victims of the conflict on host students} \\
+\textit{Oct, 2021} & \textbf{Life in Kyrgyzstan Conference} \newline \textit{Food for Education and Child Nutrition in Kyrgyzstan} \\
+\textit{Oct, 2021} & \textbf{Kix Education and Innovation Conference} \newline \textit{Food for Education and Child Nutrition in Kyrgyzstan} \\
+\textit{Sep-Feb 2019/2020} & {\bf Lecturer -- Addis Abeba University, Addis Abeba, Ethiopia} \newline \textit{Development Economics I} \\
+\textit{Jan-March 2018} & {\bf Lecturer -- Science PO, Reims, France}. \newline \textit{Quantitative and Mathematical Methods: Calculus III} \\
+\textit{May, 2022} & \textbf{Life with Corona Conference} \newline \textit{Corona Behaviours: Evidence from four African countries} 
+
+
+\end{tabular}
+
+
+
+%%%%%%%%%%%% AWARDS AND HONORS %%%%%%%%%%
+\section*{\textbf{Awards and Honors}}
+\hrule
+\begin{tabular}{p{4cm} p{12cm}}
+\textit{2025} & \textbf{CEGA Fellow Visiting Student - Center for Effective Global Action Fellowship} \newline \href{https://cega.berkeley.edu/}{\textit{UC Berkeley}} \\  
+\textit{2022-2026} & \textbf{Scholarship for doctoral studies at the Paris School of Economics } \newline \href{https://colfuturo.org}{\textit{Ministry of Science and Technology of Colombia}}  \\
+\textit{2018-2020} & \textbf{ODI Fellowship Scheme} \newline  \href{https://odi.org/en/odi-fellowship-scheme/}{\textit{Overseas Development Institute (ODI)}} \\
+\textit{2017-2018} & \textbf{\textit{Magna Cum Laude} Master in Public Policy and Development} \newline \textit{Paris School of Economics} \\
+\textit{2016-2017} & \textbf{\textit{Summa Cum Laude} Master in Economics} \newline \textit{Toulouse School of Economics} \\
+\textit{2016-2018 } & \textbf{Colfuturo scholarship for graduate studies abroad }\newline \textit{Fundaci\'on para el futuro de Colombia (Colfuturo)} \\
+\textit{2011-2017} & \textbf{URosario Merit scholarship for undergraduate studies} \newline \textit{Universidad del Rosario} \\
+2010 & \textbf{5th Place, National Higher Education Exam} \newline \textit{ICFES}
+\end{tabular}
+
+%%%%%%%%%%%% LANGUAGES  %%%%%%%%%%
+\section*{\textbf{ Language \& Software Skills }}
+\hrule
+\begin{itemize}
+
+
+\item \textbf{Languages:} \textbf{Spanish}, Native; \textbf{English}, Full Professional proficiency; \textbf{French}, Minimum Professional proficiency; \textbf{Amharic}, basic. 
+
+\item \textbf{I.T.:} \textbf{STATA}, Advanced;  \textbf{R programming}: intermediate; \textbf{Tableau}, Advanced; \textbf{Excel}, Advanced.
+\end{itemize}
+
+
+
+\newpage
+%%%%%%%%%%%% RESEARCH %%%%%%%%%%
+\section*{\textbf{Research and Collaborations}}
+\hrule
+\subsection*{During PhD work}
+\begin{itemize}
+\item  \textbf{Second Generation Effects of an Experimental Conditional Cash Transfer Program on Early Childhood Human Capital in Nicaragua} \textit{with Tania Barham, Karen Macours, John A. Maluccio and Julieta Vera Rueda} \href{https://doi.org/10.1016/j.ehb.2025.101483}{https://doi.org/10.1016/j.ehb.2025.101483}
+\item (Implementation started) \textbf{The Effects of Restorative Justice on Human and Social Capital: Evidence from Schools in Bogota}
+\item (Implementation started) \textbf{Menstrual Stigma, Hygiene, and Human Capital} \textit{with Karen Macours and Duncan Webb}
+\item (Exploratory work) \textbf{The impact of victims of the conflict on host students}
+\item (Exploratory work) \textbf{The Role of Older Siblings on Younger Siblings Development} 
+\item (Exploratory work) \textbf{Investigating the Productivity Effects of Mixed vs. Non-Mixed Groups in the Colombian Mining Industry} \textit{with Anna Barbeta}
+\end{itemize}
+\subsection*{Pre-PhD work}
+\textbf{Published articles}
+\begin{itemize}
+\item Tilman Bruck, \textbf{Oscar Mauricio D\'iaz Bot\'ia}, Neil T. N. Ferguson, Jerome Ouedraogo \& Zacharias Ziegelhofer (2019) "Assets for Alimentation? The Nutritional Impact of Assets-based Programming in Niger", \textit{The Journal of Development Studies}, 55:sup1, 55-74,  \href{https://www.tandfonline.com/doi/full/10.1080/00220388.2019.1687876}{\textbf{ [Link to publication]}}.
+\item Liliana Abreau, Anke Koebach, \textbf{Oscar D\'iaz},  Samuel Carleial, Anke Hoeffler, Wolfgang Stojetz, Hanna Freudenreich, Patricia Justino, Tilman Brück (2021) "Life with Corona: increased gender differences in depression symptoms and aggressiveness due to the pandemic burden in Germany". \textit{Frontiers of Psychology} 
+\end{itemize}
+\textbf{Other research}
+\begin{itemize}
+
+{ \setstretch{0.1}
+\item Tilman Bruck, \textbf{Oscar Mauricio D\'iaz Bot\'ia} \& Neil Ferguson (2021) "Quantitative Impact Evaluation of UNHCR Engagement in Humanitarian-Development Cooperation in Ethiopia".
+ 
+
+\item Tilman Bruck, \textbf{Oscar Mauricio D\'iaz Bot\'ia}, Neil T. N. Ferguson, Anke Hoeffler, Wolfgang Stojetz (2021) "The Life with Corona survey", Target journal: \textit{PNAS}  
+
+
+
+
+
+\item \textbf{Oscar Mauricio D\'iaz Bot\'ia}, Master thesis (2018): "Intra-household bargaining power and children nutritional outcomes in Nigeria"}. Supervised by Sylvie Lambert. \textit{Paris School of Economics} \href{https://drive.google.com/file/d/1x8vZq1nvgypp9I15EvqN-q0D0jSK6NvC/view?usp=sharing}{\textbf{ [Link to document]}}.
+
+\end{itemize}
+
+\textbf{Policy documents}
+\begin{itemize}
+\item Ministry of Education of Ethiopia (2020) "Advancing analysis in the education sector of Ethiopia - Joint Report" \textit{\textbf{Lead the team for the investigation and wrote the whole document.}}\href{https://1drv.ms/b/s!AiJLsCu4Hb4HgP9m8rhHfGhE3KNzlg?e=Q1d2oZ}{\textbf{ [Link to document]}}
+\item Ministry of Education of Ethiopia (2020) "Education Sector Development Programme VI 2013-2018 E.C. (2020/21 - 2024/25 G.C)" \textit{\textbf{Advised policy priorities, target setting and budget projections.}}
+\item Ministry of Education of Ethiopia (2020) "Education road map: 10 years education sector plan 2013-2023 E.C. (2020/21 - 2030/31 G.C)" \textit{\textbf{Advised policy priorities, target setting and budget projections.}} 
+\item Ministry of Education of Ethiopia (2019) "A price worth paying: A strategy for mobilising and utilising resources for the education sector in Ethiopia" \textit{\textbf{Lead the data analysis and wrote the chapter on inequality in education.}}\href{https://1drv.ms/b/s!AiJLsCu4Hb4HgP9lYxHTaJhHgW-G5A?e=kBhZTA}{\textbf{ [Link to document]}}
+\item Ministry of Education of Ethiopia (2019) "Education Statistics Annual Abstract 2011 E.C. (2018/19)" \textit{\textbf{Wrote the chapter for refugee education.}}\href{https://1drv.ms/b/s!AiJLsCu4Hb4HgP9n7Y4F9EEaC9XBWg?e=XKecjD}{\textbf{ [Link to document]}}
+
+Ministerio de Hacienda de Colombia (2016) "Hacia una econom\'ia nueva: Marco fiscal de mediano plazo 2016" \textit{Wrote extract:"Ejercicio de Costeo y Financiamiento para las inversiones habilitadas por la paz"}
+%\item Ministry of Finance of Colombia (2017) "Marco fiscal de mediano plazo" 
+\end{itemize}
+
+\textbf{Peer-reviewed papers for}
+\begin{itemize}
+\item World Development Journal; Overseas Development Institute
+\end{itemize}
+
+%%%%%%%%%%%% Blogs and more  %%%%%%%%%%
+%\section*{\textbf{ Blog posts and data visualizations }}
+%\hrule
+%\begin{itemize}
+
+%\item \href{https://datarepublica.org/publica/48}{Desigualdad de acceso a una educaci\'on de calidad: El reto de desarrollar competencias min\'imas en Colombia. }\underline{Here}}
+%\item \href{https://datarepublica.org/publica/50}{La loter\'ia de desarrollar muy bien o no desarrollar competencias min\'imas en Colombia. }\underline{Here}} 
+%\item My Tableau public websites are great examples of my data visualization skills. \href{https://public.tableau.com/app/profile/oscar.diaz8151#!/}{\underline{Here}} and \href{https://public.tableau.com/app/profile/oscar.mauricio.diaz.botia}{\underline{here}}. 
+%\item More personal writing in my \href{https://medium.com/@oscarmdiazb}{ \underline{Medium}} blog.
+
+
+\end{itemize}
+
+%\begin{multicols}{2}
+
+%\begin{itemize}
+
+%{ \setstretch{0.0}
+
+%\item {\bf Languages}
+
+%5\subitem {\bf Spanish} Native
+%\subitem {\bf English} Professional working proficiency
+%\subitem {\bf French} Professional working proficiency
+%\subitem {\bf Amharic} Basic
+
+
+%\item {\bf I.T.}
+
+%\subitem \textbf{STATA} Advanced
+%\subitem \textbf{Tableau} Advanced
+%\subitem \textbf{Excel} Advanced
+%\subitem \textbf{R programming} Intermediate
+
+
+
+
+
+%}
+
+%\end{itemize}
+
+%\end {multicols}
+
+
+
+%%%%%%%%%%%% RESEARCH %%%%%%%%%%
+%\section*{\textbf{Research and Collaborations}}
+
+%\begin{itemize}
+
+%{ \setstretch{0.1}
+%\item Tilman Bruck, \textbf{Oscar Mauricio D\'iaz Bot\'ia}, Neil T. N. Ferguson, Jerome Ouedraogo \& Zacharias Ziegelhofer (2019) "Assets for Alimentation? The Nutritional Impact of Assets-based Programming in Niger", \textit{The Journal of Development Studies}, 55:sup1, 55-74,  \href{https://www.tandfonline.com/doi/full/10.1080/00220388.2019.1687876}{\textbf{[Click to publication]}}.
+
+
+%\item \textbf{Oscar Mauricio D\'iaz Bot\'ia}, Tesis de grado (2018): "Intra-household bargaining power and children nutritional outcomes in Nigeria"}. Supervised by Sylvie Lambert. \textit{Paris School of Economics} \href{https://drive.google.com/file/d/1x8vZq1nvgypp9I15EvqN-q0D0jSK6NvC/view?usp=sharing}{\textbf{[Click to publication]}}.
+
+
+ 
+
+%\end{itemize}
+
+
+
+
+%%%%%%%%%%%% VOLUNTEER   %%%%%%%%%%
+
+%{\vspace{-0.5cm}}
+%\section*{\textbf{Development Voluntary Work Experience}}
+
+%{\vspace{-0.3cm}}
+%\begin{itemize}
+
+%{\bf \item Fondacio, Orphelinat Le Vigneron, Lom\'e, Togo, Jun 2015 - Aug 2015} 
+	
+%{\bf \item Teaching to read and write in Bogot\'a, Colombia, Jan 2014 - Jun 2014.} 
+
+
+
+%\end{itemize}
+
+
+
+\end{document}
+
